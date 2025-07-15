@@ -8,6 +8,11 @@ def is_unique(string):
     Returns:
         True if all characters are unique, False otherwise
     """
+    n = len(string)
+    for i in range(0,n-1):
+        for j in range(i+1,n):
+            if string[i] == string[j]:
+                return False
     return True
 
 
